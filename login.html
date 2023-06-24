@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css" class="rel">
+    <link rel="icon" sizes="180x180" href="Images/apple-touch-icon.png">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="Images/logo.png"  class="logo"     alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="others.html">Others</a></li>
+                <li><a href="Charity.html">Charity</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a class="active" href="login.html">Login</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <section id="bgm">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form class="container" action="/" method="post">
+                    <h2>Create Account</h2>
+                    <input type="text" name="name"placeholder="name" />
+                    <input type="text" name="username"placeholder="username" required/>
+                    <input type="email" name="email"placeholder="email" />
+                    <input type="password" name="password"placeholder="password" required/>
+                    
+                    <button>Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form  class="container" action="//" method="post">
+                    <h1>Log In</h1>
+                    <input type="username" placeholder="username" />
+                    <input type="password" placeholder="password" />
+                    <a href="#">Forgot your password?</a>
+                    <button>Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <script>
+            const signUpButton = document.getElementById('signUp');
+            const signInButton = document.getElementById('signIn');
+            const container = document.getElementById('container');
+    
+            signUpButton.addEventListener('click', () => {
+                container.classList.add("right-panel-active");
+            });
+    
+            signInButton.addEventListener('click', () => {
+                container.classList.remove("right-panel-active");
+            });
+        </script>
+        
+    </body>
+    
+    </html>
+
+  
+  </html>

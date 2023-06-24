@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css" class="rel">
+    <link rel="icon" sizes="180x180" href="Images/apple-touch-icon.png">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="Images/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a  href="shop.html">Shop</a></li>
+                <li><a href="others.html">Others</a></li>
+                <li><a class="active" href="Charity.html">Charity</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+   
+    
+    <section id="page-headercha">
+        <h2># Your extra is someone else's need</h2>
+        <p>It all starts with charity</p>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image ">
+            <img src="Images/sridhar.jpg" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="Images/sridhar.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="Images/sridhar1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="Images/sridhar2.webp" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="Images/sridhar3.webp" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+
+            <div  class="single-cha-details">
+                <h6>Charity/Sridhar's farm</h6>
+                <h2>Sridhar's organic paddy farm</h2>
+                    <h6>Suffered due to gaja puyal</h6>
+
+                <h3>Description:</h3>
+                <h5>Cyclone Gaja was a severe tropical cyclone that hit the southeastern coast of India in November 2018, causing widespread damage and destruction. One of the significant impacts of the storm was the destruction of paddy fields, which are an important agricultural resource in the region.Overall, the destruction of paddy fields due to Cyclone Gaja was a major setback for the agricultural community in the region and had far-reaching consequences for the local economy. It will take time and resources to repair the damage and restore the fields to a state that will allow farmers to once again grow crops and support themselves.</h5>
+
+                <div class="form">
+                    <input type="number" placeholder="Enter Amount">
+                    <button class="normal">Donate</button>
+                </div>
+            </div>
+    </section>
+
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4>Sign Up For NewsLetters</h4>
+            <p>Get E-Mail updates about our latest shop and <span>Special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Your email address">
+            <button class="normal" onclick="window.location.href='login.html';">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="Images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Bishop Heber College,Vayalur Main Road,Naal Road,Near Puthur,Tamil Nadu-620017</p>
+            <p><strong>Phone:</strong>+91 9944821229</p>
+            <p><strong>Hours:</strong>10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+
+            <div class="col install">
+                <p>Secured Payment Gateways</p>
+                <img src="Images/pay.png" alt="">
+            </div>
+        </div>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">Wish List</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+
+            
+        
+    </footer>
+    <div class="copyright">
+        <p>© 2023,Bridge - HTML CSS BHC Project Website</p>
+    </div>
+
+
+<script>
+    var MainImg = document.getElementById("MainImg");
+    var smallimg = document.getElementsByClassName("small-img");
+
+    smallimg[0].onclick = function(){
+        MainImg.src = smallimg[0].src;
+    }
+    smallimg[1].onclick = function(){
+        MainImg.src = smallimg[1].src;
+    }
+    smallimg[2].onclick = function(){
+        MainImg.src = smallimg[2].src;
+    }
+    smallimg[3].onclick = function(){
+        MainImg.src = smallimg[3].src;
+    }
+</script>
